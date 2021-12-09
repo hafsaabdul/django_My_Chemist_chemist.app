@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    margin: auto;
+    background-color: rgb(5, 34, 128);
+    padding-left: 2%;
+    padding-right: 20%;
+    box-sizing: border-box;
+    padding-top: 1.1%;
+    padding-bottom: 0.5%;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;flex-direction: column;
+    background-image: url(images/drug.jpeg);
+    background-size: cover;
+}
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+.content h2{
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(25, 21, 245);
+}
+.content p{
+    color: rgb(244, 245, 245);
+    font-weight: 300;
+    font-size: 20px;
+}
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.contactinfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.contactinfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: rgb(58, 55, 55);
+    flex-direction: column;
+    /* font-weight: 300; */
+}
+.text h3{
+    font-weight: bold;
+    color: #032125;
+}
+.contactform{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.contactform h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+.inputbox input,
+.inputbox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactform .inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactform .inputbox input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}

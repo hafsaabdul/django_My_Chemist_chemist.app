@@ -1,0 +1,201 @@
+{% extends 'base.html' %}{% load static %}
+
+{% block page_title %}
+Hafiya Pharmaceutical
+{% endblock %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'chemist/products.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="site-wrap">
+    <div class="logo">
+        <nav>
+            <ul>
+                <li><h1>Hafiya Phamarcy</h1></li>
+                <li class="active"><a href="{% url 'index' %}" class="b1">HOME</a></li>
+                <li><a href="{% url 'products' %}" class="b1">PRODUCTS</a></li>
+                <li><a href="{% url 'about' %}" class="b1">ABOUT</a></li>
+                <li><a href="{% url 'contact' %}" class="b1">CONTACT </a></li>
+            </ul>
+        </nav>
+    </div>
+    <br>
+    <div class="log">
+        <form action="" method="post">
+            <input type="text" class="form-control" placeholder="enter the drug here">
+            <a href="{% url 'index' %}">Search</a>
+        </form>
+    </div>
+
+    <div class="column">
+        <div class="cards">
+            <div class="image">
+                <a href=""> <img src="{% static 'chemist/images/product1.jpeg' %}" alt=""></a>
+            </div>
+            <div class="name">
+                <h3><a href="">AGRIMYCIN 200</a></h3>
+            </div>
+            <div class="price">
+                <p>ksh555.00</p>
+            </div>
+            <div class="describtion">
+                <summary><details>Is used for treatment of disease due to oxytetracycline susceptible organisms in beef cattle</details></summary>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="image">
+                <a href=""> <img src="{% static 'chemist/images/product5.jpeg' %}" alt=""></a>
+            </div>
+            <div class="name">
+                <h3><a href="">First Aid antiseptic spray</a></h3>
+            </div>
+            <div class="price">
+                <p>ksh970.00</p>
+            </div>
+            <div class="describtion">
+                <summary><details>Its for temporary pain relief and aids in preventing infectin in minor cuts, scrapes and abrasions</details></summary>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="image">
+                <a href=""> <img src="{% static 'chemist/images/product2.jpeg' %}" alt=""></a>
+            </div>
+            <div class="name">
+                <h3><a href="">NOROMYCIN 300</a></h3>
+            </div>
+            <div class="price">
+                <p>ksh1,120.00</p>
+            </div>
+            <div class="describtion">
+                <summary><details>For treatment of infectious bovine keratoconjunctivis(pink eye) caused by Moraxella bovis</details></summary>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="image">
+                <a href=""> <img src="{% static 'chemist/images/product12.jpeg' %}" alt=""></a>
+            </div>
+            <div class="name">
+                <h3><a href="">RABEPRAZOLE GASTRO TABLET</a></h3>
+            </div>
+            <div class="price">
+                <p>ksh1,000.00</p>
+            </div>
+            <div class="describtion">
+                <summary><details>Treat certain stomach and esophagus problems(such as acid reflux , ulcers)</details></summary>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="image">
+                <a href=""> <img src="{% static 'chemist/images/product4.jpeg' %}" alt=""></a>
+            </div>
+            <div class="name">
+                <h3><a href="">MITOMYCIN 20mg</a></h3>
+            </div>
+            <div class="price">
+                <p>ksh5,338.00</p>
+            </div>
+            <div class="describtion">
+                <summary><details>It is a type of antibiotics that is only used in cancer chemotherapy</details></summary>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="image">
+                <a href=""> <img src="{% static 'chemist/images/product6.jpeg' %}" alt=""></a>
+            </div>
+            <div class="name">
+                <h3><a href="">Spray wound cleanser</a></h3>
+            </div>
+            <div class="price">
+                <p>lsh 1,638.00</p>
+            </div>
+            <div class="describtion">
+                <summary><details>Is an effective first-aid antiseptic that helps reduce the risk of infection and prevent bacterial contamination</details></summary>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="image">
+                <a href=""> <img src="{% static 'chemist/images/product8.jpeg' %}" alt=""></a>
+            </div>
+            <div class="name">
+                <h3><a href="">SUNSCREEN</a></h3>
+            </div>
+            <div class="price">
+                <p>ksh4,555.00</p>
+            </div>
+            <div class="describtion">
+                <summary><details>Spray sunscreen will protect your skin from harmful UV rays and sun damage</details></summary>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="image">
+                <a href=""> <img src="{% static 'chemist/images/product11.jpeg' %}" alt=""></a>
+            </div>
+            <div class="name">
+                <h3><a href="">CARBONYL IRON ,FOLIC AND ZINC</a></h3>
+            </div>
+            <div class="price">
+                <p>ksh 5,670.00</p>
+            </div>
+            <div class="describtion">
+                <summary><details>It is used to treat or prevent a lack of these nutrients which may occur in certain health conditions(e.g anemia, pregnancy, poor diet, surgery recovery)</details></summary>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="image">
+                <a href=""> <img src="{% static 'chemist/images/product7.jpeg' %}" alt=""></a>
+            </div>
+            <div class="name">
+                <h3><a href="">BURN SPRAY</a></h3>
+            </div>
+            <div class="price">
+                <p>ksh1,120.00</p>
+            </div>
+            <div class="describtion">
+                <summary><details>This medication is used on the skin to stop itching and pain from certain skin conditions</details></summary>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="image">
+                <a href=""> <img src="{% static 'chemist/images/product9.jpeg' %}" alt=""></a>
+            </div>
+            <div class="name">
+                <h3 ><a href="">ACECLOFENAC 100mg</a></h3>
+            </div>
+            <div class="price">
+                <p>ksh2,020.00</p>
+            </div>
+            <div class="describtion">
+                <summary><details>Relief of pain and inflammation in osteoarthritis, rheumatiod arthritis and ankylosing spondylitis</details></summary>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="columns">
+            <h3 class="b1" >About Us</h3>
+            <p class="b1">For all your prescription you need , no need to wait long. We are the lowest out of your pocket cost. We match or beat all competitor prices. We provide specialty medication services & compounding services .we are open 24HOURS a day just for you and your health .</p>
+        </div> <br> <br>
+        <div class="link">
+            <h3 class="b1">Quick Links</h3>
+            <ul class="list">
+                <li><a href="" class="b1">Supplements</a></li>
+                <li><a href="" class="b1">Vitamins</a></li>
+                <li><a href="" class="b1">Diet &amp; Nutrition</a></li>
+                <li><a href="" class="b1">Tea &amp; Coffee</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h3 class="b1">Contact Info</h3>
+            <ul class="list">
+                <li class="b1">Red-Cross, Opposit Boma hotel, Kenya</li>
+                <li class="b1"><a href="tel://+254723929210">+254 7392 929 210</a></li>
+                <li class="b1">hafinapharm@gmail.com</li>
+            </ul>
+        </div>
+        <div class="copy">
+            <p>Copyright &copy;</p>
+        </div>
+    </footer>
+{% endblock %}

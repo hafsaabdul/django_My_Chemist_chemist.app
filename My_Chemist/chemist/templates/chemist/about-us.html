@@ -1,0 +1,67 @@
+{% extends 'base.html' %}{% load static %}
+
+{% block page_title %}
+Hafiya Pharmaceutical
+{% endblock %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'chemist/about-us.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="site-wrap">
+    <div class="header">
+        <nav>
+            <ul>
+                <li><h1>Hafiya Phamarcy</h1></li>
+                <li class="active"><a href="{% url 'index' %}" class="b1">HOME</a></li>
+                <li><a href="{% url 'products' %}" class="b1">PRODUCTS</a></li>
+                <li><a href="{% url 'about' %}" class="b1">ABOUT</a></li>
+                <li><a href="{% url 'contact' %}" class="b1">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class=" image-about">
+        <img src="{% static 'chemist/images/about.jpeg' %}" alt="" height="550"
+        width="1245">
+        <h1>About Us</h1>
+        <p>WE TAKE CARE OF YOUR HEALTH  || We wont let you down,We are here to make you feel good and recover quickly from any desease you are facing. Come and visit US.Welcome to Hafiya Pharmacy. WE PROVIDE TOTAL HEALTH CARE SOLUTION. Get the best treatment Because You deserve it.</p>
+    </div>
+
+    <article class="back">
+        <h2>How We Started</h2>
+        <div class="flex">
+            <p>We started from a small building 2 blocks from our home, it was in the old town , the town had only few residence.the DME was low. We tried our best to go the extra mile, to find the oddball request whether the patient has been with us for years or is new to us. I think what makes us stand out the most is the variety of our front-end items. It’s not just the DME equipment or OTC items—it’s the not-so-common things like our compression garments, extensive wound care and the products caregivers need to provide better care for their loved ones. When our patients ask us about compression garments, many times we assist them by putting them on so that they have the best chance at compliance. </p>
+            <p><img src="{% static 'chemist/images/old pharm.jpeg' %}" alt="" width="500" height="240"></p>
+        </div>
+    </article>
+
+    <article class="back">
+        <h2 class="h2" >How we are going </h2>
+        <div class="flex">
+            <p><img src="{% static 'chemist/images/new pharm.jpeg' %}" alt="" width="500" height="270"></p> <br>
+            <p>We’re the pharmacy that services most of the skilled nursing facilities in our area. We’re on call 24/7 for the SNFs, hospice, the mental health crisis unit and our local Programs of All-Inclusive Care for the Elderly. We work with insurance companies to get prior authorizations that other pharmacies won’t, and we coordinate with local payees and offer charge accounts to make sure patients get their medications seamlessly and in a timely manner. We’re also the go-to pharmacy in the area for specialty drugs and for clinicians who have patients needing extra care with their medications. In addition to compliance packaging and medication synchronization services, we offer free delivery for our patients, employing seven drivers who make prescription and OTC deliveries up to 70 miles away! We even send pharmacists into the community to set up vaccine clinics at local businesses and care homes during flu season.</p>
+        </div>
+    </article>
+
+    <article class="column">
+        <h2>Free Shipping</h2>
+        <div class="flex">
+            <p> Fast, Free dilivary on over 100 million items.
+                Order ksh2500 or more to qualify for
+                FREE Shipping on over 100 million items.</p>
+            <p><img src="{% static 'chemist/images/delivery.jpeg' %}" alt=""></p>
+        </div>
+        <h2>Free Returns</h2>
+        <div class="flex">
+            <p><img src="{% static 'chemist/images/Return.jpeg' %}" alt="" width="50" height="50"></p>
+            <p>Free, Easy returns on millions of items.You can return most items sold on Hafiya Pharmacy within 30days. When you return an item you may see different options depending on the item or reason of return</p>
+        </div>
+        <h2>Customer Support</h2>
+        <div class="flex">
+            <p>How can we help you ? through chat and call .Need any Help call Us ,We are available 24/7</p>
+            <p><img src="{% static 'chemist/images/customer.jpeg' %}" alt="" width="170" height="100"></p>
+        </div>
+    </article>
+</div>
+{% endblock %}

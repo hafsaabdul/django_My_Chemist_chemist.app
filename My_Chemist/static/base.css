@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto+Condensed:wght@400;700&display=swap');
+
+html{
+    font-family: 'Open Sans', 'Lato', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+h1,h2,h3{
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+
+
+    
+

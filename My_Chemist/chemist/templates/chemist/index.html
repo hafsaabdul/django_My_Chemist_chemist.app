@@ -1,0 +1,66 @@
+{% extends 'base.html' %}{% load static %}
+
+{% block page_title %}
+Hafiya Pharmaceutical
+{% endblock %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'chemist/index.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li class="active"><a href="{% url 'index' %}" class="b1">HOME</a></li>
+                <li><a href="{% url 'products' %}" class="b1">PRODUCTS</a></li>
+                <li><a href="{% url 'about' %}" class="b1">ABOUT </a></li>
+                <li><a href="{% url 'contact' %}" class="b1">CONTACT </a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h1>Hafiya Pharmacy</h1>
+            <p>Helping You for the Right Medication</p>
+            <br>
+            <h3>Serving Nairobi City Over 10 Years For Healthy Life of Its People</h3>
+            <br>
+            <p>
+                <ul>
+                    <li>Fast & Friendly Services</li>
+                    <li>Convinient Located</li>
+                    <li>Free Blood Presure Check</li>
+                    <li>Prescription Ready In Minutes</li>
+                    <li>Most Insurance Accepted</li>
+                </ul>
+            </p>
+            <button type="button">Explore</button>
+        </div>
+        <div class="col">
+            <div class="card card1">
+                <h5>Insuli</h5>
+                <p class="b">Regulate blood sugar</p>
+            </div>
+            <div class="card card2">
+                <h5>Pain Killers</h5>
+                <p class="b">Is relief from pain</p>
+            </div>
+            <div class="card card3">
+                <h5>Oxycodone</h5>
+                <p class="b">Is an opiod medication</p>
+            </div>
+            <div class="card card4">
+                <h5>Fentanyl</h5>
+                <p class="b">For pain management</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+</div> -->
+                
+                
+{% endblock %}

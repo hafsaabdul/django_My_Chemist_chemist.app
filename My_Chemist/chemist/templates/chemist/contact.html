@@ -1,0 +1,77 @@
+{% extends 'base.html' %}{% load static %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+{% block page_title %}
+Hafiya Pharmaceutical
+{% endblock %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'chemist/contact.css' %}">
+{% endblock %}  
+{% block content %} 
+<div class="header">
+    <nav>
+        <ul>
+            <li><h1>Hafiya Phamarcy</h1></li>
+            <li class="active"><a href="{% url 'index' %}" class="b1">HOME</a></li>
+            <li><a href="{% url 'products' %}" class="b1">PRODUCTS</a></li>
+            <li><a href="{% url 'about' %}" class="b1">ABOUT</a></li>
+            <li><a href="{% url 'contact' %}" class="b1">CONTACT</a></li>
+        </ul>
+    </nav>
+</div>
+        <section class="contact">
+            <div class="content">
+                <h2>Contact Us</h2>
+                <p>For all enquiries , please call us,email us using the form below. Leave us a maessage below. </p>
+            </div>
+            <div class="container">
+                <div class="contactinfo">
+                    <div class="box">
+                        <div class="icon"><img src="{% static 'chemist/images/address.jpeg' %}" alt="" width="45"
+                            height="45"></div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>Red-Cross,<br> Opposit Boma hotel,<br> Nairobi, Kenya</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><img src="{% static 'chemist/images/phone.jpeg' %}" alt="" width="43" height="43"></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>+254 7392 929 210</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><img src="{% static 'chemist/images/email.jpeg' %}" alt="" width="50" height="50"></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>hafinapharm@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactform">
+                    <form>
+                        <h2>Send Message</h2>
+                        <div class="inputbox">
+                            <input type="text" name="" required="required">
+                            <span>Full Name</span>
+                        </div>
+                        <div class="inputbox">
+                            <input type="text" name="" required="required">
+                            <span>Email</span>
+                        </div>
+                        <div class="inputbox">
+                            <textarea required="required"></textarea>
+                            <span>Type your Message...</span>
+                        </div>
+                        <div class="inputbox">
+                            <input type="submit" name="" value="send">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+
+{% endblock %}
